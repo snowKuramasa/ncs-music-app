@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(
   cors({
     origin: true,
-    // method: [],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], // 許可するメソッドを指定
   })
 )
 
