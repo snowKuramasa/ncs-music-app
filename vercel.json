@@ -2,19 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "app/backend/dist/index.js",
+      "src": "ncs-music-app/backend/dist/index.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["app/backend/dist/**"] }
+      "config": { "includeFiles": ["ncs-music-app/backend/dist/**"] }
     },
     {
-      "src": "app/frontend/next.config.js",
+      "src": "ncs-music-app/frontend/next.config.js",
       "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "app/backend/dist/index.js",
+      "dest": "ncs-music-app/backend/dist/index.js",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Credentials": "true",
@@ -25,7 +25,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "app/frontend/.next/server/pages/$1"
+      "dest": "ncs-music-app/frontend/.next/server/pages/$1"
     }
   ]
 }
