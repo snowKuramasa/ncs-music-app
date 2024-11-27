@@ -25,7 +25,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "ncs-music-app/frontend/.next/server/pages/$1"
+      "dest": "/ncs-music-app/frontend/.next/server/pages/$1"
     }
   ]
 }
