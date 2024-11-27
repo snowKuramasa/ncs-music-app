@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/index.js",
+      "src": "ncs-music-app/backend/dist/index.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
+      "config": { "includeFiles": ["ncs-music-app/backend/dist/**"] }
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
