@@ -7,7 +7,7 @@
       "config": { "includeFiles": ["ncs-music-app/backend/dist/**"] }
     },
     {
-      "src": "ncs-music-app/frontend/next.config.js",
+      "src": "ncs-music-app/frontend/next.config.ts",
       "use": "@vercel/next"
     }
   ],
