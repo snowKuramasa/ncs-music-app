@@ -2,7 +2,7 @@ import { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  distDir: 'ncs-music-app/frontend/public',
+  distDir: './public',
 }
 
 export default nextConfig
