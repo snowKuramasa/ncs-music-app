@@ -3,6 +3,7 @@
 import { SessionProvider } from 'next-auth/react'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
+import { Session } from 'next-auth'
 
 // muiテーマ設定
 const theme = createTheme({
@@ -20,7 +21,7 @@ export default function RootLayout({
   session,
 }: {
   children: React.ReactNode
-  session: any
+  session: Session | null // 型を明確に指定
 }) {
   return (
     <html lang='en'>
